@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./confirm_contact.css">
+    <link rel="stylesheet" href="./contactform.css">
+    <script src="./contact.js"></script>
 </head>
 <body id="test">
     <header>
@@ -18,6 +21,31 @@
             </nav>
         </div>
     </header>
+
+    <section class="contactform">
+        <div class="inside">
+            <h1>Kontaktformular</h1>
+            <form onsubmit="sendMail(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required class="media">
+
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required class="media">
+
+                <label for="subject">Betreff:</label>
+                <input type="text" id="subject" name="subject" required class="media">
+
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="auto" minrows="2" maxrows="6" required class="media"></textarea>
+
+                <button class="button_green" type="submit">Absenden</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- <footer>
+        <h2>Footer</h2>
+    </footer> -->
 
     <script src="./index.js"></script>
 </body>
