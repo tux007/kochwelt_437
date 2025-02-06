@@ -59,6 +59,7 @@ nav a:hover {
 
 h2 {
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 main {
@@ -91,6 +92,8 @@ main {
     border-style: none;
     border-radius: 5px;
     color: white;
+    font-weight: bold;
+    font-size: 18px;
     box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
 }
 
@@ -116,10 +119,11 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 18px;
 }
 
 .rezeptBox {
-    margin: 30px 10px;
+    margin: 0 10px;
 }
 
 #misc {
@@ -129,8 +133,8 @@ main {
 }
 
 #misc img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
 }
