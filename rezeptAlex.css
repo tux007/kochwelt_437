@@ -1,0 +1,10 @@
+#rezeptAlex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#ingredient-calculation {
+    display: flex;
+    margin: 25px;
+}
