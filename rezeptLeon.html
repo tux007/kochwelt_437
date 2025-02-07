@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./rezeptLeon.css">
+</head>
+<body id="test">
+    <header>
+        <div id="content">
+            <img src="./resources/logo.png" alt="logo">
+            <nav>
+                <div><a href="./index.html">Start</a></div>
+                <div><a class="active" href="./rezeptDesTages.html">Rezept des Tages</a></div>
+                <div><a href="./kontakt.html">Kontakt</a></div>
+                <div><a href="./impressum.html">Impressum</a></div>
+            </nav>
+        </div>
+    </header>
+    <main id="rezeptLeon">
+        <h2>Hähnchengeschnetzeltes mit Bandnudeln</h2>
+        <img src="./resources/haehnchengeschnetzeltes-mit-bandnudeln.jpg" alt="">
+        <div id="info">
+            <p>[icon] 15 Min.</p>
+            <p>[icon] simpel</p>
+            <p>[icon] 06.02.2025</p>
+            <p>[icon] 458kcal</p>
+        </div>
+        <div id="portions">
+            <p>Zutaten für</p>
+            <input id="input" type="text" value="4">
+            <button onclick="checkInput()">[icon] Portionen</button>
+        </div>
+        <div id="ingredients">
+            <table>
+                <tr>
+                    <td><span>300</span> g</td>
+                    <td>Bandnudeln</td>
+                </tr>
+                <tr>
+                    <td><span>500</span> g</td>
+                    <td>Hähnchenburst</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> EL</td>
+                    <td>Butterschmalz</td>
+                </tr>
+                <tr>
+                    <td><span>3</span></td>
+                    <td>Lauchzwiebeln</td>
+                </tr>
+                <tr>
+                    <td><span>100</span> ml</td>
+                    <td>Sahne</td>
+                </tr>
+                <tr>
+                    <td><span></span></td>
+                    <td>Salz & Pfeffer</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> TL</td>
+                    <td>Majoran</td>
+                </tr>
+                <tr>
+                    <td><span>150</span> ml</td>
+                    <td>Wasser</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> EL</td>
+                    <td>Mehl</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> TL</td>
+                    <td>Gemüsebrühpulver</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="./rezeptLeon.js"></script>
+</body>
+</html>

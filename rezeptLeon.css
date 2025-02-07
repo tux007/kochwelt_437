@@ -1,0 +1,51 @@
+#rezeptLeon {
+    padding: 60px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#rezeptLeon img {
+    width: 600px;
+    border-radius: 10px;
+}
+
+#info {
+    display: flex;
+    margin: 20px;
+}
+
+p {
+    background-color: lightgrey;
+    padding: 8px;
+    margin: 0 3px;
+    border-radius: 10px;
+}
+
+#portions {
+    display: flex;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+td {
+    padding: 5px;
+}
+
+td:first-child {
+    width: 100px;
+    text-align: right;
+    border-radius: 10px 0 0 10px;
+}
+
+td:nth-child(2) {
+    width: 200px;
+    border-radius: 0 10px 10px 0;
+}
