@@ -27,21 +27,10 @@
     margin-top: 0;
 }
 
-#rezeptDesTages button {
-    background-color: rgba(0,128,0,255);
-    padding: 10px;
-    border-style: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
-}
-
 #rezepte {
     background-color: lightgrey;
     width: 100%;
-    padding: 60px 140px;
+    padding: 60px 0;
     text-align: center;
     display: flex;
     flex-direction: column;

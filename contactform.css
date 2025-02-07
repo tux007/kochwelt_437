@@ -63,17 +63,6 @@ textarea {
   padding-left: 10px;
 }
 
-.button_green {
-    background-color: rgba(0,128,0,255);
-    padding: 10px;
-    border-style: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
-}
-
 @media (max-height: 750px) {
   .media {
     margin-bottom: 5px !important;
