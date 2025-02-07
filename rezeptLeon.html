@@ -10,7 +10,9 @@
 <body id="test">
     <header>
         <div id="content">
-            <img src="./resources/logo.png" alt="logo">
+            <a href="./index.html">
+                <img src="./resources/logo.png" alt="logo">
+            </a>
             <nav>
                 <div><a class="active" href="./index.html">Start</a></div>
                 <div><a href="./rezeptDesTages.html">Rezept des Tages</a></div>
@@ -29,11 +31,16 @@
             <p>[icon] 458kcal</p>
         </div>
         <div id="portions">
-            <p>Zutaten für</p>
+            <p>Zutaten für:</p>
             <input id="input" type="number" value="4" min="1" max="20">
             <button onclick="checkInput()">[icon] Portionen</button>
         </div>
-        <p>test</p>
+        <div id="customMessage" style="display: none;">
+            <div id="messageContent">
+                <p>Wähle zwischen 1-20 Portionen!</p>
+                <button onclick="closeMessage()">OK</button>
+            </div>
+        </div>
         <div id="ingredients">
             <table>
                 <tr>
