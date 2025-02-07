@@ -1,5 +1,5 @@
-const input = document.getElementById("input");
-const amounts = document.querySelectorAll("span");
+const input = document.getElementById("input"); // <input> benötigt id="input" & value="..."
+const amounts = document.querySelectorAll("span"); // Mengenangaben in <span><span/>
 
 let originalValue = input.value;
 
