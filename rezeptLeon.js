@@ -16,8 +16,16 @@ function checkInput() {
     if (input.value >= 1 && input.value <= 20) {
         calculate();
     } else {
-        alert("max 20 Portionen!");
+        showMessage();
     }
+}
+
+function showMessage() {
+    document.getElementById("customMessage").style.display = "flex";
+}
+
+function closeMessage() {
+    document.getElementById("customMessage").style.display = "none";
 }
 
 function calculate() {
