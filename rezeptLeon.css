@@ -1,38 +1,77 @@
-#rezeptLeon {
-    padding: 60px 140px;
+main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+#rezept {
+    padding: 60px 140px;
+    max-width: 1440px;
+}
+
+.dishImg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info {
+    display: flex;
+    gap: 20px;
+}
+
+.info p {
+    background-color: rgb(230, 230, 230);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
     align-items: center;
 }
 
-#rezeptLeon img {
-    width: 600px;
-    border-radius: 10px;
+.icon {
+    width: 20px;
+    padding-right: 8px;
 }
 
-#info {
+#portionen {
     display: flex;
-    margin: 20px;
+    align-items: center;
+    margin: 20px 0;
+    gap: 20px;
+    font-size: 18px;
 }
 
-p {
-    background-color: lightgrey;
-    padding: 8px;
-    margin: 0 3px;
-    border-radius: 10px;
-}
-
-#portions {
+#portionen button {
     display: flex;
-    margin: 20px;
+    align-items: center;
+}
+
+#portionen button img {
+    filter: invert(1) grayscale(100%);
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(230, 230, 230);
+    margin: 40px 0;
+}
+
+#input {
+    padding: 0 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
 }
 
 table {
     border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 60px;
 }
 
 tr:nth-child(even) {
-    background-color: lightgrey;
+    background-color: rgb(230, 230, 230);
 }
 
 td {
@@ -46,6 +85,41 @@ td:first-child {
 }
 
 td:nth-child(2) {
-    width: 200px;
     border-radius: 0 10px 10px 0;
 }
+
+<<<<<<< HEAD
+#ersteller div{
+    display: flex;
+    align-items: center;
+}
+
+#ersteller img{
+    width: 100px;
+}
+
+#ersteller p {
+    font-size: 24px;
+    margin: 30px;
+}
+=======
+#customMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messageContent {
+    background: rgb(140, 93, 93, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+>>>>>>> a2f0632ccc6e2e7d7588af756186fd8e9730693a

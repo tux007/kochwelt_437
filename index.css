@@ -66,6 +66,7 @@ button {
     font-weight: bold;
     font-size: 18px;
     box-shadow: 3px 3px 8px rgb(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 footer {
