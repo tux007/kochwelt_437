@@ -23,11 +23,20 @@
     <main id="rezeptAlex">
     <h1>Rinderrouladen klassisch</h2>
         <img src="./resources/rinderrouladen-klassisch.jpg" alt="Rinderroulade klassisch">
+
+    <div class="recipe-informations">
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> 60 Min.</span>
+        <span><img src="./resources/img/icons/brain-solid.svg" class="recipe-icons"alt=""> pfiffig</span>
+        <span><img src="./resources/img/icons/calendar-alt-regular.svg" class="recipe-icons" alt="">24.07.2012</span>
+    </div>
+
+
     <div id="ingredient-calculation">
-        <p>Zutaten für</p>
+        <p>Zutaten für </p>
         <input id="input" type="number" value="8" min="1" max="20">
         <button onclick="">Portionen</button>
     </div>
+
     <table class="ingredients">
         <tbody>
             <tr>
@@ -91,10 +100,11 @@
 
     <h2>Zubereitung</h2>
     <div class="time-indication">
-        <span> <img src="./resources/img/icons/clock-regular.svg" class="icon-timer" alt=""> Arbeitszeit ca. 1 Stunde</span>
-        <span> <img src="./resources/img/icons/clock-regular.svg" class="icon-timer" alt=""> Koch-/Backzeit ca. 2 Stunden</span>
-        <span> <img src="./resources/img/icons/clock-regular.svg" class="icon-timer" alt=""> Gesamtzeit ca. 3 Stunden</span>
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Arbeitszeit ca. 1 Stunde</span>
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Koch-/Backzeit ca. 2 Stunden</span>
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Gesamtzeit ca. 3 Stunden</span>
     </div>
+
     <div id="preparation">
         Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn bereitstellen. 
         Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern.
@@ -137,7 +147,12 @@
     </div>
 
     <h3>Rezept erstellt von</h3>
-    <p>Alex Schöfer</p>
+    <div class="creator">
+        <img src="./resources/img/profile.png" class="profile" alt="">
+        <p>Alex</p>
+    </div>
+
 </main>
+<script src="./zutatenRechner.js"></script>
 </body>
 </html>

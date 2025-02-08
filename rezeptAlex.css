@@ -35,11 +35,41 @@ td {
     background-color: #f3f4f0;
 }
 
-.time-indication span {
-    padding: 8px;
-}
-
-.icon-timer {
+.recipe-icons {
   width: 16px;
   height: 16px;
+  margin-right: 4px;
+}
+
+.recipe-informations > span {
+  display: inline-flex;
+  margin-top: 24px;
+  align-items: center;
+  margin-right: 8px;
+  border-radius: 8px;
+  background-color: #f3f4f0;
+  padding: 4px 8px;
+}
+
+.time-indication > span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 8px;
+  border-radius: 8px;
+  background-color: #f3f4f0;
+  padding: 4px 8px;
+}
+
+p {
+  margin-right: 8px; 
+}
+
+.profile {
+  height: 64px;
+  width: 64px;
+}
+
+.creator {
+  display: flex;
+  justify-content: center;
 }
