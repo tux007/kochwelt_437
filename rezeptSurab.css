@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1440px;
+}
+
+h1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+h2 {
+    margin: 0 !important;
+}
+
+.title_img {
+    background-image: url("./resources/img/bowl.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+
+}
+
+.recipe_meta {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    gap: 16px;
+}
+
+.recipe_meta img {
+    width: 16px;
+    height: auto;
+}
+
+.background_recipe_meta {
+    background-color: lightgrey;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: lightgrey;
+}
+
+#portions {
+    display: flex;
+    margin: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+td {
+    padding: 5px;
+}
+
+td:first-child {
+    width: 100px;
+    text-align: right;
+    border-radius: 10px 0 0 10px;
+}
+
+td:nth-child(2) {
+    width: 200px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+#customMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messageContent {
+    background: rgb(140, 93, 93, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.preparation {
+    width: 100%;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile_img {
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+}
+
+footer {
+    padding: 0px;
+}
