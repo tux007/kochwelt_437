@@ -18,6 +18,13 @@
   margin: 25px;
 }
 
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(230, 230, 230);
+  margin: 40px 0;
+}
+
 #preparation {
   display: flex;
   align-items: center;
@@ -26,6 +33,10 @@
   margin-right: 350px;
   margin-top: 48px;
   margin-bottom: 48px;
+}
+
+table {
+  border-collapse: collapse;
 }
 
 .ingredients tbody tr:nth-of-type(2n + 1) td {
