@@ -46,77 +46,79 @@
 
       <p class="background_recipe_meta">
         <img src="./resources/img/icons/calendar-alt-regular.svg" alt="">
-        TT.MM.JJJJ
+        08.02.2025
       </p>
 
     </div>
 
     <hr>
 
-    <div id="portions">
-      <p>Zutaten für:</p>
-      <input id="input" type="number" value="4" min="1" max="20">
-      <button onclick="checkInput()">Portionen</button>
-    </div>
-
-    <div id="customMessage" style="display: none;">
-      <div id="messageContent">
-        <p>Wähle zwischen 1-20 Portionen!</p>
-        <button onclick="closeMessage()">OK</button>
+    <div class="calculator">
+      <div id="portions">
+        <p>Zutaten für</p>
+        <input id="input" type="number" value="4" min="1" max="20">
+        <button onclick="checkInput()">Portionen</button>
       </div>
-    </div>
 
-    <div>
-      <table>
-        <tr>
-          <td><span>12</span></td>
-          <td>Shiitake Pilz(e)</td>
-        </tr>
-        <tr>
-          <td><span>400</span> g</td>
-          <td>Sushi Reis</td>
-        </tr>
-        <tr>
-          <td><span>2</span> Handvoll</td>
-          <td>Babyspinat</td>
-        </tr>
-        <tr>
-          <td><span>100</span> g</td>
-          <td>Bohnensprossen</td>
-        </tr>
-        <tr>
-          <td><span>2</span></td>
-          <td>Karotte(n)</td>
-        </tr>
-        <tr>
-          <td><span>1</span></td>
-          <td>Zucchini</td>
-        </tr>
-        <tr>
-          <td><span>2</span></td>
-          <td>Knoblauchzehe(n)</td>
-        </tr>
-        <tr>
-          <td><span>4</span> EL</td>
-          <td>Öl zum Braten</td>
-        </tr>
-        <tr>
-          <td><span>4</span> EL</td>
-          <td>Sojasauce</td>
-        </tr>
-        <tr>
-          <td><span>1</span> EL</td>
-          <td>geröstetes Sesamöl</td>
-        </tr>
-        <tr>
-          <td><span>4</span></td>
-          <td>Ei(er)</td>
-        </tr>
-        <tr>
-          <td><span>2</span> EL</td>
-          <td>Gochujang</td>
-        </tr>
-      </table>
+      <div id="customMessage" style="display: none;">
+        <div id="messageContent">
+          <p>Wähle zwischen 1-20 Portionen!</p>
+          <button onclick="closeMessage()">OK</button>
+        </div>
+      </div>
+
+      <div>
+        <table>
+          <tr>
+            <td><span>12</span></td>
+            <td>Shiitake Pilz(e)</td>
+          </tr>
+          <tr>
+            <td><span>400</span> g</td>
+            <td>Sushi Reis</td>
+          </tr>
+          <tr>
+            <td><span>2</span> Handvoll</td>
+            <td>Babyspinat</td>
+          </tr>
+          <tr>
+            <td><span>100</span> g</td>
+            <td>Bohnensprossen</td>
+          </tr>
+          <tr>
+            <td><span>2</span></td>
+            <td>Karotte(n)</td>
+          </tr>
+          <tr>
+            <td><span>1</span></td>
+            <td>Zucchini</td>
+          </tr>
+          <tr>
+            <td><span>2</span></td>
+            <td>Knoblauchzehe(n)</td>
+          </tr>
+          <tr>
+            <td><span>4</span> EL</td>
+            <td>Öl zum Braten</td>
+          </tr>
+          <tr>
+            <td><span>4</span> EL</td>
+            <td>Sojasauce</td>
+          </tr>
+          <tr>
+            <td><span>1</span> EL</td>
+            <td>geröstetes Sesamöl</td>
+          </tr>
+          <tr>
+            <td><span>4</span></td>
+            <td>Ei(er)</td>
+          </tr>
+          <tr>
+            <td><span>2</span> EL</td>
+            <td>Gochujang</td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="preparation">
 
@@ -133,7 +135,8 @@
         Knoblauchzehen schälen und fein hacken, in einer Pfanne in 2 EL Öl anbraten, Pilze hinzugeben. Nach 1 Min
         Sojasauce und Sesamöl hinzufügen, umrühren und herausnehmen. 2 EL Öl in die Pfanne geben und 4 Spiegeleier
         braten. Reis auf 4 Schalen verteilen. Gemüse und Pilze darauf anrichten und je ein ei in die Mitte setzen. Am
-        Tisch alles gründlich vermischen und mit Chilipaste Gochujang nach Belieben würzen. Eventuell mit Sojasauce und
+        Tisch alles gründlich vermischen und mit Chilipaste Gochujang nach Belieben würzen. Eventuell mit Sojasauce
+        und
         Sesamöl nachwürzen.</p>
       <h3>Rezept erstellt von</h3>
       <p>
@@ -146,12 +149,13 @@
     </div>
 
 
-
   </section>
 
   <footer></footer>
 
   <script src="./index.js"></script>
+  <script src="./zutatenRechner.js"></script>
+
 </body>
 
 </html>
