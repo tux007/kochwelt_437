@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./rezeptAlex.css">
 
 </head>
 <body>
@@ -19,14 +20,32 @@
             </nav>
         </div>
     </header>
-
+    <main id="rezeptAlex">
     <h1>Rinderrouladen klassisch</h2>
-    <div id="ingredient-calculation">
-        <p>Zutaten für</p>
-        <input id="input" type="number" value="8" min="1" max="20">
-        <button onclick="">Portionen</button>
+        <img src="./resources/rinderrouladen-klassisch.jpg" class="dish-img" alt="Rinderroulade klassisch">
+
+    <div class="recipe-informations">
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> 60 Min.</span>
+        <span><img src="./resources/img/icons/brain-solid.svg" class="recipe-icons"alt=""> pfiffig</span>
+        <span><img src="./resources/img/icons/calendar-alt-regular.svg" class="recipe-icons" alt="">24.07.2012</span>
     </div>
-    <table>
+
+    <div class="line"></div>
+
+    <div id="ingredient-calculation">
+        <p>Zutaten für </p>
+        <input id="input" type="number" value="8" min="1" max="20">
+        <button onclick="checkInput()">Portionen</button>
+    </div>
+
+    <div id="customMessage" style="display: none;">
+        <div id="messageContent">
+          <p>Wähle zwischen 1-20 Portionen!</p>
+          <button onclick="closeMessage()">OK</button>
+        </div>
+    </div>
+
+    <table class="ingredients">
         <tbody>
             <tr>
                 <td><span>8</span></td>
@@ -54,18 +73,18 @@
             </tr>
             <tr>
                 <td><span>1</span> Stück(e)</td>
-                <td>Knollensllerie</td>
+                <td>Knollensellerie</td>
             </tr>
             <tr>
                 <td><span>1</span></td>
                 <td>Möhre(n)</td>
             </tr>
             <tr>
-                <td><span>1/2</span> Stange(n)</td>
+                <td><span>0.5</span> Stange(n)</td>
                 <td>Lauch</td>
             </tr>
             <tr>
-                <td><span>1/2</span> Flasche</td>
+                <td><span>0.5</span> Flasche</td>
                 <td>Rotwein, guter, ca. 375ml</td>
             </tr>
             <tr>
@@ -73,7 +92,7 @@
                 <td>Salz und Pfeffer</td>
             </tr>
             <tr>
-                <td><span>1/2</span> Liter</td>
+                <td><span>0.5</span> Liter</td>
                 <td>Rinderfond, kräftiger</td>
             </tr>
             <tr>
@@ -81,26 +100,70 @@
                 <td>Speisestärke</td>
             </tr>
             <tr>
-                <td><span>1</span> Schuss</td>
+                <td><span>1</span>  Schuss</td>
                 <td>Gurkenflüssigkeit</td>
             </tr>
         </tbody>
     </table>
 
+<div id="preparation">
     <h2>Zubereitung</h2>
-    <div>
-        Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn bereitstellen. <br>
-        Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern. Auf jede Roulade mittig in der Länge ca. 1/2 Zwiebel und 1 1/2 Scheiben Frühstücksspeck sowie 1/2 (evtl. mehr) Gurke verteilen. Nun von beiden Längsseiten etwas einschlagen, dann einrollen und mit dem Küchengarn wie ein Postpaket verschnüren.
-        In einer Pfanne das Butterschmalz heiß werden lassen und die Rouladen rundherum darin anbraten. Herausnehmen und in einen Schmortopf umfüllen.
-        Den Sellerie, die restliche Zwiebel, Lauch und Möhren kleinschneiden und in der Pfanne anbraten. Sobald sie halbwegs "blond" sind, kurz rühren. Eine sehr dünne Schicht vom Rotwein angießen, nicht mehr rühren und die Flüssigkeit verdampfen lassen. Sobald das Gemüse dann wieder trockenbrät, wieder eine Schicht Wein angießen, kurz rühren und weiter verdampfen lassen. Dies wiederholen, bis die 1/2 Flasche Wein aufgebraucht ist. Auf diese Art wird das Röstgemüse sehr braun (gut für den Geschmack und die Farbe der Soße), aber nicht trocken. Am Schluss mit dem Rinderfond, etwas Salz und Pfeffer und einem guten Schuss Gurkensud auffüllen und dann in den Schmortopf zu den Rouladen geben. Den Deckel auflegen.
-        Den Topf entweder auf kleine Flamme stellen oder bei ca. 160 °C Ober-/Unterhitze in den Backofen für 1 1/2 Stunden geben. Ab und zu evtl. etwas Flüssigkeit zugießen.
-        Nach 1 1/2 Stunden testen, ob die Rouladen weich sind (einfach mal mit den Kochlöffel ein bisschen draufdrücken, sie sollten sich willig eindrücken lassen - wenn nicht, noch eine halbe Stunde weiterschmoren). Dann vorsichtig aus dem Topf heben und warm stellen.
-        Die Soße durch ein Sieb geben und wieder aufkochen lassen. Ca. 1 EL Senf mit etwas Wasser und der Speisestärke gut verrühren, in die kochende Soße nach und nach unter Rühren gießen, bis die gewünschte Konsistenz erreicht ist. Die Soße nochmal mit Salz, Pfeffer, Rotwein und Gurkensud abschmecken.
-
+    <div class="time-indication">
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Arbeitszeit ca. 1 Stunde</span>
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Koch-/Backzeit ca. 2 Stunden</span>
+        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Gesamtzeit ca. 3 Stunden</span>
     </div>
 
+    <p>
+        Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn bereitstellen. 
+        Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern.
+        <br>
+        <br>
+        Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern. Auf jede Roulade mittig in der Länge ca. 1/2 Zwiebel und 1 1/2 Scheiben Frühstücksspeck sowie 1/2 (evtl. mehr) Gurke verteilen. Nun von beiden Längsseiten etwas einschlagen, dann einrollen und mit dem Küchengarn wie ein Postpaket verschnüren. 
+        <br>
+        <br>
+        In einer Pfanne das Butterschmalz heiß werden lassen und die Rouladen rundherum darin anbraten. 
+        Herausnehmen und in einen Schmortopf umfüllen.
+        <br>
+        <br>
+        Den Sellerie, die restliche Zwiebel, Lauch und Möhren kleinschneiden und in der Pfanne anbraten. 
+        Sobald sie halbwegs "blond" sind, kurz rühren. 
+        <br>
+        <br>
+        Eine sehr dünne Schicht vom Rotwein angießen, nicht mehr rühren und die Flüssigkeit verdampfen lassen. 
+        <br>
+        <br>
+        Sobald das Gemüse dann wieder trockenbrät, wieder eine Schicht Wein angießen, kurz rühren und weiter verdampfen lassen. 
+        <br>
+        <br>
+        Dies wiederholen, bis die 1/2 Flasche Wein aufgebraucht ist. Auf diese Art wird das Röstgemüse sehr braun (gut für den Geschmack und die Farbe der Soße), aber nicht trocken. 
+        <br>
+        <br>
+        Am Schluss mit dem Rinderfond, etwas Salz und Pfeffer und einem guten Schuss Gurkensud auffüllen und dann in den Schmortopf zu den Rouladen geben. Den Deckel auflegen.
+        <br>
+        <br>
+        Den Topf entweder auf kleine Flamme stellen oder bei ca. 160 °C Ober-/Unterhitze in den Backofen für 1 1/2 Stunden geben. Ab und zu evtl. etwas Flüssigkeit zugießen.
+        <br>
+        <br>
+        Nach 1 1/2 Stunden testen, ob die Rouladen weich sind (einfach mal mit den Kochlöffel ein bisschen draufdrücken, sie sollten sich willig eindrücken lassen - wenn nicht, noch eine halbe Stunde weiterschmoren). 
+        <br>
+        <br>
+        Dann vorsichtig aus dem Topf heben und warm stellen.
+        <br>
+        <br>
+        Die Soße durch ein Sieb geben und wieder aufkochen lassen. Ca. 1 EL Senf mit etwas Wasser und der Speisestärke gut verrühren, in die kochende Soße nach und nach unter Rühren gießen, bis die gewünschte Konsistenz erreicht ist. Die Soße nochmal mit Salz, Pfeffer, Rotwein und Gurkensud abschmecken.
+    </p>
+    </div>
+
+    <div class="line"></div>
+
     <h3>Rezept erstellt von</h3>
-    <p>Alex</p>
-    
+    <div class="creator">
+        <img src="./resources/img/profile.png" class="profile" alt="">
+        <p>Alex</p>
+    </div>
+
+</main>
+<script src="./zutatenRechner.js"></script>
 </body>
 </html>
