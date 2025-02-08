@@ -1,7 +1,7 @@
 // Zutatenliste als Tabelle angeben
 
 const input = document.getElementById("input"); // <input> benötigt id="input" & value="..."
-const amounts = document.querySelectorAll("span"); // Mengenangaben in <span><span/>
+const amounts = document.querySelectorAll("table span"); // Mengenangaben in <span><span/>
 
 let originalValue = input.value;
 
