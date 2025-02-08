@@ -2,6 +2,15 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 1440px;
+  padding: 60px 140px;
+}
+
+.dish-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 #ingredient-calculation {
