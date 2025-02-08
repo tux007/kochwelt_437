@@ -1,10 +1,39 @@
 #rezeptAlex {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #ingredient-calculation {
-    display: flex;
-    margin: 25px;
+  display: flex;
+  margin: 25px;
+}
+
+#preparation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.ingredients tbody tr:nth-of-type(2n + 1) td {
+  background: #f3f4f0;
+}
+
+td {
+  box-sizing: border-box;
+  min-height: 48px;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.time-indication {
+    padding: 8px;
+}
+
+.time-indication span {
+    padding: 8px;
 }
