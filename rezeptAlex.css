@@ -18,6 +18,18 @@
   margin: 25px;
 }
 
+#input {
+  margin-left: 8px;
+  border-radius: 8px 0 0 8px;
+  width: 100px;
+  font-size: 16px;
+  padding: 8px;
+  border-left: 2px solid rgb(230, 230, 230);
+  border-top: 2px solid rgb(230, 230, 230);
+  border-bottom: 2px solid rgb(230, 230, 230);
+  border-right: none;
+}
+
 #customMessage {
   position: fixed;
   top: 0;
@@ -55,32 +67,28 @@
   margin-bottom: 48px;
 }
 
-/* #preparation p {
-  background-color: rgb(230, 230, 230);
-  padding: 10px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-} */
-
 table {
   border-collapse: collapse;
+  margin-bottom: 48px;
 }
 
 .ingredients tbody tr:nth-of-type(2n + 1) td {
   background: #f3f4f0;
 }
 
-td {
+td:first-child {
+  text-align: center;
+  border-radius: 10px 0 0 10px;
+  padding: 8px;
+}
+
+td:nth-child(2) {
   box-sizing: border-box;
   min-height: 48px;
   padding: 8px;
   vertical-align: top;
-}
-
-.time-indication {
-    padding: 8px;
-    background-color: #f3f4f0;
+  border-radius: 0 10px 10px 0;
+  text-align: left;
 }
 
 .recipe-icons {
@@ -99,13 +107,18 @@ td {
   padding: 4px 8px;
 }
 
-.time-indication > span {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 8px;
-  border-radius: 8px;
-  background-color: #f3f4f0;
-  padding: 4px 8px;
+.time-indication {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.time-indication > p {
+  background-color: rgb(230, 230, 230);
+  margin: 0;
+  border-radius: 10px;
+  padding: 8px;
 }
 
 p {
