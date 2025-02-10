@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./rezeptLeon.css">
+</head>
+<body id="test">
+    <header>
+        <div id="content">
+            <a href="./index.html">
+                <img src="./resources/logo.png" alt="logo">
+            </a>
+            <nav>
+                <div><a class="active" href="./index.html">Start</a></div>
+                <div><a href="./rezeptDesTages.html">Rezept des Tages</a></div>
+                <div><a href="./kontakt.html">Kontakt</a></div>
+                <div><a href="./impressum.html">Impressum</a></div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div id="rezept">
+            <h2>Schnelle Ramen Suppe</h2>
+            <img class="dishImg" src="./resources/ramen.jpg" alt="Ramen Noodles">
+            <div class="info">
+                <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt=""> 20 Min.</p>
+                <p><img class="icon" src="./resources/img/icons/brain-solid.svg" alt=""> einfach</p>
+                <p><img class="icon" src="./resources/img/icons/calendar-alt-regular.svg" alt=""> 10.02.2025</p>
+            </div>
+            <div class="line"></div>
+            <div id="portionen">
+                <p>Zutaten für</p>
+                <input id="input" type="number" value="2" min="1" max="20">
+                <button onclick="checkInput()"><img class="icon" src="./resources/img/icons/refresh-svgrepo-com.svg" alt=""> Portionen</button>
+            </div>
+            <div id="customMessage" style="display: none;">
+                <div id="messageContent">
+                    <p>Wähle zwischen 1-20 Portionen!</p>
+                    <button onclick="closeMessage()">OK</button>
+                </div>
+            </div>
+            <table>
+                <tr>
+                    <td><span>200</span> g</td>
+                    <td>Ramennudeln</td>
+                </tr>
+                <tr>
+                    <td><span>2</span> St</td>
+                    <td>Pak Choi, geviertelt</td>
+                </tr>
+                <tr>
+                    <td><span>1</span></td>
+                    <td>Paprika, in Streifen geschnitten</td>
+                </tr>
+                <tr>
+                    <td><span>2</span></td>
+                    <td>Handvoll Pilze, in Scheiben geschnitten</td>
+                </tr>
+                <tr>
+                    <td><span>1</span></td>
+                    <td>Bund Koriander, gehackt</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Salz & Pfeffer</td>
+                </tr>
+                <tr>
+                    <td><span>2</span> EL</td>
+                    <td>Sesamkörner</td>
+                </tr>
+                <tr>
+                    <td><span>2</span> EL</td>
+                    <td>Sojasauce</td>
+                </tr>
+                <tr>
+                    <td><span>1</span></td>
+                    <td>Saft einer Limette(n)</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> TL</td>
+                    <td>Currypaste</td>
+                </tr>
+                <tr>
+                    <td><span>1</span> TL</td>
+                    <td>Misopaste</td>
+                </tr>
+                <tr>
+                    <td><span>400</span> ml</td>
+                    <td>Brühe</td>
+                </tr>
+                <tr>
+                    <td><span>400</span> ml</td>
+                    <td>Kokosmilch</td>
+                </tr>
+                <tr>
+                    <td><span>2</span></td>
+                    <td>Eier</td>
+                </tr>
+            </table>
+            <div id="zubereitung">
+                <h2>Zubereitung</h2>
+                <div class="info">
+                    <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt=""> 10 Min.</p>
+                    <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt="">Gesamtzeit: 20 Min.</p>
+                </div>
+                <p>
+                    Die Eier in kochendem Wasser 6 Minuten kochen.
+                    Die Nudeln, das Gemüse und die Pasten in eine Pfanne geben.
+                    Mit Brühe und Kokosmilch aufgiessen.
+                    Kurz aufkochen lassen.
+                    
+                    Mit Koriander, Limettensaft, Sojasauce und Sesamkernen garnieren. Die Eier halbieren und auf die Suppe legen.
+                </p>
+            </div>
+            <div class="line"></div>
+            <div id="ersteller">
+                <h3>Rezept erstellt von</h3>
+                <div>
+                    <img src="./resources/img/profile.png" alt="">
+                    <p>Tom</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./zutatenRechner.js"></script>
+</body>
+</html>
