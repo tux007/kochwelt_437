@@ -6,6 +6,7 @@
     <title>Kochwelt</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./rezeptAlex.css">
+    <link rel="icon" type="image-icon" href="./resources/img/logo_small.png">
 
 </head>
 <body>
@@ -27,17 +28,17 @@
         <img src="./resources/rinderrouladen-klassisch.jpg" class="dish-img" alt="Rinderroulade klassisch">
 
     <div class="recipe-informations">
-        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> 60 Min.</span>
-        <span><img src="./resources/img/icons/brain-solid.svg" class="recipe-icons"alt=""> pfiffig</span>
-        <span><img src="./resources/img/icons/calendar-alt-regular.svg" class="recipe-icons" alt="">24.07.2012</span>
+        <p><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> 60 Min.</p>
+        <p><img src="./resources/img/icons/brain-solid.svg" class="recipe-icons"alt=""> pfiffig</p>
+        <p><img src="./resources/img/icons/calendar-alt-regular.svg" class="recipe-icons" alt="">08.02.2025</p>
     </div>
 
     <div class="line"></div>
 
     <div id="ingredient-calculation">
-        <p>Zutaten für </p>
+        <p>Zutaten für</p>
         <input id="input" type="number" value="8" min="1" max="20">
-        <button onclick="checkInput()">Portionen</button>
+        <button onclick="checkInput()"><img class="icon" src="./resources/img/icons/refresh-svgrepo-com.svg">Portionen</button>
     </div>
 
     <div id="customMessage" style="display: none;">
@@ -111,9 +112,9 @@
 <div id="preparation">
     <h2>Zubereitung</h2>
     <div class="time-indication">
-        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Arbeitszeit ca. 1 Stunde</span>
-        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Koch-/Backzeit ca. 2 Stunden</span>
-        <span><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Gesamtzeit ca. 3 Stunden</span>
+        <p class="background_recipe_meta"><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Arbeitszeit ca. 1 Stunde</p>
+        <p class="background_recipe_meta"><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Koch-/Backzeit ca. 2 Stunden</p>
+        <p class="background_recipe_meta"><img src="./resources/img/icons/clock-regular.svg" class="recipe-icons" alt=""> Gesamtzeit ca. 3 Stunden</p>
     </div>
 
     <p>
@@ -161,8 +162,8 @@
 
     <h3>Rezept erstellt von</h3>
     <div class="creator">
-        <img src="./resources/img/profile.png" class="profile" alt="">
-        <p>Alex</p>
+        <img src="./resources/img/img_creator_AlexSchöfer.JPG" class="profile" alt="">
+        <p>Alex Schöfer</p>
     </div>
 
 </main>
