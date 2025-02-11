@@ -1,172 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./rezeptSurab.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kochwelt</title>
-  <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="./rezeptSurab.css" />
-
-</head>
-
-<body>
-  <header>
-    <div id="content">
-      <a href="./index.html">
-        <img src="./resources/logo.png" alt="logo" />
-      </a>
-      <nav>
-        <div><a href="./index.html">Start</a></div>
-        <div>
-          <a class="active" href="./rezeptDesTages.html">Rezept des Tages</a>
-        </div>
-        <div><a href="./kontakt.html">Kontakt</a></div>
-        <div><a href="./impressum.html">Impressum</a></div>
-      </nav>
-    </div>
-  </header>
-
-  <section class="content_section">
-    <h1>Bibimbap (Gemüsebowl)</h1>
-
-    <div class="title_img"></div>
-
-    <div class="recipe_meta">
-
-      <p class="background_recipe_meta">
-        <img src="./resources/img/icons/clock-regular.svg" alt="">
-        35 Min.
-      </p>
-
-      <p class="background_recipe_meta">
-        <img src="./resources/img/icons/brain-solid.svg" alt="">
-        simpel
-      </p>
-
-      <p class="background_recipe_meta">
-        <img src="./resources/img/icons/calendar-alt-regular.svg" alt="">
-        08.02.2025
-      </p>
-
-    </div>
-
-    <div class="hr"></div>
-
-    <div class="calculator">
-      <div id="portions">
-        <p>Zutaten für</p>
-        <input id="input" type="number" value="4" min="1" max="20">
-        <button onclick="checkInput()">Portionen</button>
+  <body>
+    <header>
+      <div id="content">
+        <a href="./index.html">
+          <img src="./resources/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <div><a href="./index.html">Start</a></div>
+          <div>
+            <a class="active" href="./rezeptDesTages.html">Rezept des Tages</a>
+          </div>
+          <div><a href="./kontakt.html">Kontakt</a></div>
+          <div><a href="./impressum.html">Impressum</a></div>
+        </nav>
       </div>
+    </header>
 
-      <div id="customMessage" style="display: none;">
-        <div id="messageContent">
-          <p>Wähle zwischen 1-20 Portionen!</p>
-          <button onclick="closeMessage()">OK</button>
-        </div>
-      </div>
+    <section class="content_section">
+      <h1>Bibimbap (Gemüsebowl)</h1>
 
-      <div>
-        <table>
-          <tr>
-            <td><span>12</span></td>
-            <td>Shiitake Pilz(e)</td>
-          </tr>
-          <tr>
-            <td><span>400</span> g</td>
-            <td>Sushi Reis</td>
-          </tr>
-          <tr>
-            <td><span>2</span> Handvoll</td>
-            <td>Babyspinat</td>
-          </tr>
-          <tr>
-            <td><span>100</span> g</td>
-            <td>Bohnensprossen</td>
-          </tr>
-          <tr>
-            <td><span>2</span></td>
-            <td>Karotte(n)</td>
-          </tr>
-          <tr>
-            <td><span>1</span></td>
-            <td>Zucchini</td>
-          </tr>
-          <tr>
-            <td><span>2</span></td>
-            <td>Knoblauchzehe(n)</td>
-          </tr>
-          <tr>
-            <td><span>4</span> EL</td>
-            <td>Öl zum Braten</td>
-          </tr>
-          <tr>
-            <td><span>4</span> EL</td>
-            <td>Sojasauce</td>
-          </tr>
-          <tr>
-            <td><span>1</span> EL</td>
-            <td>geröstetes Sesamöl</td>
-          </tr>
-          <tr>
-            <td><span>4</span></td>
-            <td>Ei(er)</td>
-          </tr>
-          <tr>
-            <td><span>2</span> EL</td>
-            <td>Gochujang</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="preparation">
+      <div class="title_img"></div>
 
-      <h2>Zubereitung</h2>
       <div class="recipe_meta">
-
         <p class="background_recipe_meta">
-          <img src="./resources/img/icons/clock-regular.svg" alt="">
-          ca. 35 Minuten
+          <img src="./resources/img/icons/clock-regular.svg" alt="" />
+          35 Min.
         </p>
 
         <p class="background_recipe_meta">
-          <img src="./resources/img/icons/clock-regular.svg" alt="">
-          Gesamtzeit ca. 35 Minuten
+          <img src="./resources/img/icons/brain-solid.svg" alt="" />
+          simpel
         </p>
 
-      </div>
-      <p class="description_preparation">Pilze 30 Minuten in heißem Wasser einweichen lassen. Reis nach
-        Packungsanleitung zubereiten. Spinat und
-        Bohnensprossen waschen und putzen. Karotten schälen und stifteln. Zucchini waschen und in Stifte schneiden.
-        Gemüse einige Sekunden in kochendem Wasser blanchieren. Pilze ausdrücken und in feine Streifen schneiden.
-        Knoblauchzehen schälen und fein hacken, in einer Pfanne in 2 EL Öl anbraten, Pilze hinzugeben. Nach 1 Min
-        Sojasauce und Sesamöl hinzufügen, umrühren und herausnehmen. 2 EL Öl in die Pfanne geben und 4 Spiegeleier
-        braten. Reis auf 4 Schalen verteilen. Gemüse und Pilze darauf anrichten und je ein Ei in die Mitte setzen. Am
-        Tisch alles gründlich vermischen und mit Chilipaste Gochujang nach Belieben würzen. Eventuell mit Sojasauce
-        und
-        Sesamöl nachwürzen.</p>
-
-      <h3>Rezept erstellt von</h3>
-
-      <div class="creator">
-
-        <img class="profile_img" src="./resources/img/profile.png" alt="">
-        <p>Surab</p>
-
+        <p class="background_recipe_meta">
+          <img src="./resources/img/icons/calendar-alt-regular.svg" alt="" />
+          08.02.2025
+        </p>
       </div>
 
+      <div class="hr"></div>
 
-    </div>
+      <div class="calculator">
+        <div id="portions">
+          <p>Zutaten für</p>
+          <input id="input" type="number" value="4" min="1" max="20" />
+          <button onclick="checkInput()">Portionen</button>
+        </div>
 
+        <div id="customMessage" style="display: none">
+          <div id="messageContent">
+            <p>Wähle zwischen 1-20 Portionen!</p>
+            <button onclick="closeMessage()">OK</button>
+          </div>
+        </div>
 
-  </section>
+        <div>
+          <table>
+            <tr>
+              <td><span>12</span></td>
+              <td>Shiitake Pilz(e)</td>
+            </tr>
+            <tr>
+              <td><span>400</span> g</td>
+              <td>Sushi Reis</td>
+            </tr>
+            <tr>
+              <td><span>2</span> Handvoll</td>
+              <td>Babyspinat</td>
+            </tr>
+            <tr>
+              <td><span>100</span> g</td>
+              <td>Bohnensprossen</td>
+            </tr>
+            <tr>
+              <td><span>2</span></td>
+              <td>Karotte(n)</td>
+            </tr>
+            <tr>
+              <td><span>1</span></td>
+              <td>Zucchini</td>
+            </tr>
+            <tr>
+              <td><span>2</span></td>
+              <td>Knoblauchzehe(n)</td>
+            </tr>
+            <tr>
+              <td><span>4</span> EL</td>
+              <td>Öl zum Braten</td>
+            </tr>
+            <tr>
+              <td><span>4</span> EL</td>
+              <td>Sojasauce</td>
+            </tr>
+            <tr>
+              <td><span>1</span> EL</td>
+              <td>geröstetes Sesamöl</td>
+            </tr>
+            <tr>
+              <td><span>4</span></td>
+              <td>Ei(er)</td>
+            </tr>
+            <tr>
+              <td><span>2</span> EL</td>
+              <td>Gochujang</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="preparation">
+        <h2>Zubereitung</h2>
+        <div class="recipe_meta">
+          <p class="background_recipe_meta">
+            <img src="./resources/img/icons/clock-regular.svg" alt="" />
+            ca. 35 Minuten
+          </p>
 
-  <footer></footer>
+          <p class="background_recipe_meta">
+            <img src="./resources/img/icons/clock-regular.svg" alt="" />
+            Gesamtzeit ca. 35 Minuten
+          </p>
+        </div>
+        <p class="description_preparation">
+          Pilze 30 Minuten in heißem Wasser einweichen lassen. Reis nach
+          Packungsanleitung zubereiten. Spinat und Bohnensprossen waschen und
+          putzen. Karotten schälen und stifteln. Zucchini waschen und in Stifte
+          schneiden. Gemüse einige Sekunden in kochendem Wasser blanchieren.
+          Pilze ausdrücken und in feine Streifen schneiden. Knoblauchzehen
+          schälen und fein hacken, in einer Pfanne in 2 EL Öl anbraten, Pilze
+          hinzugeben. Nach 1 Min Sojasauce und Sesamöl hinzufügen, umrühren und
+          herausnehmen. 2 EL Öl in die Pfanne geben und 4 Spiegeleier braten.
+          Reis auf 4 Schalen verteilen. Gemüse und Pilze darauf anrichten und je
+          ein Ei in die Mitte setzen. Am Tisch alles gründlich vermischen und
+          mit Chilipaste Gochujang nach Belieben würzen. Eventuell mit Sojasauce
+          und Sesamöl nachwürzen.
+        </p>
 
-  <script src="./index.js"></script>
-  <script src="./zutatenRechner.js"></script>
+        <h3>Rezept erstellt von</h3>
 
-</body>
+        <div class="creator">
+          <img class="profile_img" src="./resources/img/profile.png" alt="" />
+          <p>Surab</p>
+        </div>
+      </div>
+    </section>
 
+    <footer>
+      <div id="footer-content">
+        <img src="./resources/img/logo_small.png" alt="logo" />
+
+        <p>© Alex Schöfer, Leon König, Surab Link & Tom Steimann</p>
+        <nav>
+          <a href="./datenschutz.html">Datenschutz</a>
+          <a href="./impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./zutatenRechner.js"></script>
+  </body>
 </html>
