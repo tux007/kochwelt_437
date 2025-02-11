@@ -1,6 +1,6 @@
 #start h2 {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 #start {
@@ -11,7 +11,7 @@
 
 #rezeptDesTages {
     max-width: 1440px;
-    padding: 60px 140px;
+    padding: 60px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@
 }
 
 #rezeptDesTages h2 {
-    margin-top: 0;
+    margin-top: 30px;
 }
 
 #rezepte {
@@ -70,7 +70,7 @@
 
 #misc {
     text-align: center;
-    padding: 60px 140px;
+    padding: 60px 80px;
     max-width: 1440px;
 }
 
@@ -89,4 +89,44 @@
 #misc p {
     padding: 0 50px;
     text-align: left;
+}
+
+@media (max-width: 800px){
+    #rezeptDesTages {
+        flex-direction: column;
+    }
+
+    .rezepte {
+        flex-direction: column;
+    }
+
+    .rezeptBox:not(:last-child){
+        padding: 20px 0;
+    }
+
+    #misc #box{
+        flex-direction: column-reverse;
+    }
+
+    #misc img {
+        width: 100%;
+        height: 150px;
+    }
+
+    #misc p {
+        margin-top: 30px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 470px) {    
+    #rezeptDesTages img {
+        width: 200px;
+        margin: 0 20px;
+    }
+
+    #misc {
+        padding: 60px 40px;
+    }
 }
