@@ -67,16 +67,6 @@ nav a:hover {
     width: 30px;
 }
 
-#menu {
-    background-color: white;
-    box-shadow: none;
-    display: none;
-}
-
-#menu img{
-    width: 30px;
-}
-
 button {
   background-color: rgba(0, 128, 0, 255);
   padding: 10px;
