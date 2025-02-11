@@ -4,6 +4,8 @@
   flex-direction: column;
   max-width: 1440px;
   padding: 60px 140px;
+  min-height: 100vh;
+  flex: 1;
 }
 
 .dish-img {
