@@ -1,116 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./rezeptLeon.css">
-</head>
-<body id="test">
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./rezeptLeon.css" />
+  </head>
+  <body id="test">
     <header>
-        <div id="content">
-            <a href="./index.html">
-                <img src="./resources/logo.png" alt="logo">
-            </a>
-            <nav>
-                <div><a class="active" href="./index.html">Start</a></div>
-                <div><a href="./rezeptDesTages.html">Rezept des Tages</a></div>
-                <div><a href="./kontakt.html">Kontakt</a></div>
-                <div><a href="./impressum.html">Impressum</a></div>
-            </nav>
-        </div>
+      <div id="content">
+        <a href="./index.html">
+          <img src="./resources/logo.png" alt="logo" />
+        </a>
+        <nav>
+          <div><a class="active" href="./index.html">Start</a></div>
+          <div><a href="./rezeptDesTages.html">Rezept des Tages</a></div>
+          <div><a href="./kontakt.html">Kontakt</a></div>
+          <div><a href="./impressum.html">Impressum</a></div>
+        </nav>
+      </div>
     </header>
     <main>
-        <div id="rezept">
-            <h2>Hähnchengeschnetzeltes mit Bandnudeln</h2>
-            <img class="dishImg" src="./resources/haehnchengeschnetzeltes-mit-bandnudeln.jpg" alt="">
-            <div class="info">
-                <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt=""> 15 Min.</p>
-                <p><img class="icon" src="./resources/img/icons/brain-solid.svg" alt=""> simpel</p>
-                <p><img class="icon" src="./resources/img/icons/calendar-alt-regular.svg" alt=""> 06.02.2025</p>
-            </div>
-            <div class="line"></div>
-            <div id="portionen">
-                <p>Zutaten für</p>
-                <input id="input" type="number" value="4" min="1" max="20">
-                <button onclick="checkInput()"><img class="icon" src="./resources/img/icons/refresh-svgrepo-com.svg" alt=""> Portionen</button>
-            </div>
-            <div id="customMessage" style="display: none;">
-                <div id="messageContent">
-                    <p>Wähle zwischen 1-20 Portionen!</p>
-                    <button onclick="closeMessage()">OK</button>
-                </div>
-            </div>
-            <table>
-                <tr>
-                    <td><span>300</span> g</td>
-                    <td>Bandnudeln</td>
-                </tr>
-                <tr>
-                    <td><span>500</span> g</td>
-                    <td>Hähnchenburst</td>
-                </tr>
-                <tr>
-                    <td><span>1</span> EL</td>
-                    <td>Butterschmalz</td>
-                </tr>
-                <tr>
-                    <td><span>3</span></td>
-                    <td>Lauchzwiebeln</td>
-                </tr>
-                <tr>
-                    <td><span>100</span> ml</td>
-                    <td>Sahne</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Salz & Pfeffer</td>
-                </tr>
-                <tr>
-                    <td><span>1</span> TL</td>
-                    <td>Majoran</td>
-                </tr>
-                <tr>
-                    <td><span>150</span> ml</td>
-                    <td>Wasser</td>
-                </tr>
-                <tr>
-                    <td><span>1</span> EL</td>
-                    <td>Mehl</td>
-                </tr>
-                <tr>
-                    <td><span>1</span> TL</td>
-                    <td>Gemüsebrühpulver</td>
-                </tr>
-            </table>
-            <div id="zubereitung">
-                <h2>Zubereitung</h2>
-                <div class="info">
-                    <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt=""> 15 Min.</p>
-                    <p><img class="icon" src="./resources/img/icons/clock-regular.svg" alt="">Gesamtzeit: 25 Min.</p>
-                </div>
-                <p>
-                    Die Nudeln nach Packungsanleitung in Salzwasser kochen.
-                    Die Hähnchenbrust in Streifen schneiden und in Butterschmalz anbraten.
-                    Die Lauchzwiebeln klein schneiden und mit der Hähnchenbrust anbraten, Salz und Gewürze hinzufügen. <br>
-                    <br>
-                    Das Wasser mit dem Mehl und der Brühe vermischen und die Sahne dazugeben, alles miteinander vermischen, 
-                    in die Pfanne geben und ca. 5 - 8 Minuten köcheln lassen.
-                    Danach den Herd ausmachen und abschmecken.
-                </p>
-            </div>
-            <div class="line"></div>
-            <div id="ersteller">
-                <h3>Rezept erstellt von</h3>
-                <div>
-                    <img src="./resources/img/profile.png" alt="">
-                    <p>Leon</p>
-                </div>
-            </div>
+      <div id="rezept">
+        <h2>Hähnchengeschnetzeltes mit Bandnudeln</h2>
+        <img
+          class="dishImg"
+          src="./resources/haehnchengeschnetzeltes-mit-bandnudeln.jpg"
+          alt=""
+        />
+        <div class="info">
+          <p>
+            <img
+              class="icon"
+              src="./resources/img/icons/clock-regular.svg"
+              alt=""
+            />
+            15 Min.
+          </p>
+          <p>
+            <img
+              class="icon"
+              src="./resources/img/icons/brain-solid.svg"
+              alt=""
+            />
+            simpel
+          </p>
+          <p>
+            <img
+              class="icon"
+              src="./resources/img/icons/calendar-alt-regular.svg"
+              alt=""
+            />
+            06.02.2025
+          </p>
         </div>
+        <div class="line"></div>
+        <div id="portionen">
+          <p>Zutaten für</p>
+          <input id="input" type="number" value="4" min="1" max="20" />
+          <button onclick="checkInput()">
+            <img
+              class="icon"
+              src="./resources/img/icons/refresh-svgrepo-com.svg"
+              alt=""
+            />
+            Portionen
+          </button>
+        </div>
+        <div id="customMessage" style="display: none">
+          <div id="messageContent">
+            <p>Wähle zwischen 1-20 Portionen!</p>
+            <button onclick="closeMessage()">OK</button>
+          </div>
+        </div>
+        <table>
+          <tr>
+            <td><span>300</span> g</td>
+            <td>Bandnudeln</td>
+          </tr>
+          <tr>
+            <td><span>500</span> g</td>
+            <td>Hähnchenburst</td>
+          </tr>
+          <tr>
+            <td><span>1</span> EL</td>
+            <td>Butterschmalz</td>
+          </tr>
+          <tr>
+            <td><span>3</span></td>
+            <td>Lauchzwiebeln</td>
+          </tr>
+          <tr>
+            <td><span>100</span> ml</td>
+            <td>Sahne</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Salz & Pfeffer</td>
+          </tr>
+          <tr>
+            <td><span>1</span> TL</td>
+            <td>Majoran</td>
+          </tr>
+          <tr>
+            <td><span>150</span> ml</td>
+            <td>Wasser</td>
+          </tr>
+          <tr>
+            <td><span>1</span> EL</td>
+            <td>Mehl</td>
+          </tr>
+          <tr>
+            <td><span>1</span> TL</td>
+            <td>Gemüsebrühpulver</td>
+          </tr>
+        </table>
+        <div id="zubereitung">
+          <h2>Zubereitung</h2>
+          <div class="info">
+            <p>
+              <img
+                class="icon"
+                src="./resources/img/icons/clock-regular.svg"
+                alt=""
+              />
+              15 Min.
+            </p>
+            <p>
+              <img
+                class="icon"
+                src="./resources/img/icons/clock-regular.svg"
+                alt=""
+              />Gesamtzeit: 25 Min.
+            </p>
+          </div>
+          <p>
+            Die Nudeln nach Packungsanleitung in Salzwasser kochen. Die
+            Hähnchenbrust in Streifen schneiden und in Butterschmalz anbraten.
+            Die Lauchzwiebeln klein schneiden und mit der Hähnchenbrust
+            anbraten, Salz und Gewürze hinzufügen. <br />
+            <br />
+            Das Wasser mit dem Mehl und der Brühe vermischen und die Sahne
+            dazugeben, alles miteinander vermischen, in die Pfanne geben und ca.
+            5 - 8 Minuten köcheln lassen. Danach den Herd ausmachen und
+            abschmecken.
+          </p>
+        </div>
+        <div class="line"></div>
+        <div id="ersteller">
+          <h3>Rezept erstellt von</h3>
+          <div>
+            <img src="./resources/img/profile.png" alt="" />
+            <p>Leon</p>
+          </div>
+        </div>
+      </div>
     </main>
+    <footer>
+      <div id="footer-content">
+        <img src="./resources/img/logo_small.png" alt="logo" />
+
+        <p>© Alex Schöfer, Leon König, Surab Link & Tom Steimann</p>
+        <nav>
+          <a href="./datenschutz.html">Datenschutz</a>
+          <a href="./impressum.html">Impressum</a>
+        </nav>
+      </div>
+    </footer>
 
     <script src="./zutatenRechner.js"></script>
-</body>
+  </body>
 </html>
