@@ -5,11 +5,14 @@
   src: url(./resources/fonts/Raleway-VariableFont_wght.ttf);
 }
 
+html, body {
+    position: relative;
+    overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: Raleway;
-  position: relative;
-  overflow-x: hidden;
 }
 
 header {
@@ -86,7 +89,7 @@ nav a:hover {
 }
 
 .resp-menu-closed {
-    transform: translateX(100%);
+    transform: translateX(100%)
 }
 
 button {

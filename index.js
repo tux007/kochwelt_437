@@ -1,3 +1,5 @@
+const respNav = document.getElementById("responsive-nav");
+
 function toggleMenu() {
-    document.getElementById("responsive-nav").classList.toggle("resp-menu-closed");
+    respNav.classList.toggle("resp-menu-closed");
 }
