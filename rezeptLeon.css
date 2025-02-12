@@ -63,7 +63,7 @@ main {
 
 #input {
     padding: 0 10px;
-    width: 100px;
+    max-width: 100px;
     height: 40px;
     font-size: 18px;
 }
@@ -124,4 +124,29 @@ td:nth-child(2) {
     border-radius: 5px;
     text-align: center;
     border-radius: 10px;
+}
+
+@media (max-width: 470px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .info {
+        gap: 5px;
+        font-size: 12px;
+    }
+
+    .icon {
+        width: 15px;
+    }
+
+    #portionen {
+        font-size: 16px;
+        gap: 5px;
+    }
+
+    #input {
+        width: 30px;
+        font-size: 16px;
+    }
 }
