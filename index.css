@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .resp-menu-closed {
-    transform: translateX(100%)
+    transform: translateX(100%);
 }
 
 button {
