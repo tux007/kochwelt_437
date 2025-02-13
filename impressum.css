@@ -1,13 +1,13 @@
 .impressum {
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 .alignCenter {
     display: flex;
     text-align: center;
     max-width: 1440px;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 80px;
-
 }

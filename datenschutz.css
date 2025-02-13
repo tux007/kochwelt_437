@@ -1,19 +1,21 @@
 main {
     display: flex;
+    align-items: center;
     min-height: 100vh;
-    flex: 1; 
+    /* flex: 1;  */
     flex-direction: column;
 }
 
 .container {
-    margin: 0 140px;
-    padding: 20px;
+    margin: 80px;
+    /* padding: 20px; */
     max-width: 1440px;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 h1, h2, h3, h4 {
     color: black;
+    
 }
 
 p, ul {
