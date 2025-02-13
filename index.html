@@ -1,96 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kochwelt</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./start.css">
-    <link rel="icon" type="image-icon" href="./resources/img/logo_small.png">
-  </head>
-  <body id="test">
-    <header>
-      <div id="content">
-        <a href="./index.html">
-          <img src="./resources/logo.png" alt="logo" />
-        </a>
-        <nav>
-          <a class="active" href="./index.html">Start</a>
-          <a href="./rezeptDesTages.html">Rezept des Tages</a>
-          <a href="./kontakt.html">Kontakt</a>
-          <a href="./impressum.html">Impressum</a>
-        </nav>
-        <button onclick="toggleMenu()" id="menu">
-          <img src="./resources/img/icons/hamburger-menu-mobile-svgrepo-com.svg" alt="">
-        </button>
-      </div>
-      <div id="responsive-nav" class="resp-menu-closed">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kochwelt</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./start.css">
+  <link rel="icon" type="image-icon" href="./resources/img/logo_small.png">
+</head>
+
+<body id="test">
+  <header>
+    <div id="content">
+      <a href="./index.html">
+        <img src="./resources/logo.png" alt="logo" />
+      </a>
+      <nav>
         <a class="active" href="./index.html">Start</a>
         <a href="./rezeptDesTages.html">Rezept des Tages</a>
         <a href="./kontakt.html">Kontakt</a>
         <a href="./impressum.html">Impressum</a>
+      </nav>
+      <button onclick="toggleMenu()" id="menu">
+        <img src="./resources/img/icons/hamburger-menu-mobile-svgrepo-com.svg" alt="">
+      </button>
+    </div>
+    <div id="responsive-nav" class="resp-menu-closed">
+      <a class="active" href="./index.html">Start</a>
+      <a href="./rezeptDesTages.html">Rezept des Tages</a>
+      <a href="./kontakt.html">Kontakt</a>
+      <a href="./impressum.html">Impressum</a>
+    </div>
+  </header>
+  <main id="start">
+    <div id="rezeptDesTages">
+      <img src="./resources/img/croissant.jpg" alt="img" />
+      <div class="description">
+        <h2>Rezept des Tages</h2>
+        <p>
+          Lorem ipsum dolor sit amet, r incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitationent, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <button>Zum Rezept</button>
       </div>
-    </header>
-    <main id="start">
-      <div id="rezeptDesTages">
-        <img src="./resources/img/croissant.jpg" alt="img" />
-        <div class="description">
-          <h2>Rezept des Tages</h2>
-          <p>
-            Lorem ipsum dolor sit amet, r incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitationent, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <button>Zum Rezept</button>
+    </div>
+    <div id="rezepte">
+      <h2>Weitere Rezepte</h2>
+      <div class="rezepte">
+        <div class="rezeptBox">
+          <a href="./rezeptLeon.html">
+            <img src="./resources/haehnchengeschnetzeltes-mit-bandnudeln.jpg" alt="" />
+          </a>
+          <p>Hähnchengeschnetzeltes <br> mit Bandnudeln</p>
+        </div>
+        <div class="rezeptBox">
+          <a href="./rezeptSurab.html">
+            <img src="./resources/img/bowl.png" alt="" />
+          </a>
+          <p>Bibimbap (Gemüsebowl)</p>
+        </div>
+        <div class="rezeptBox">
+          <a href="./rezeptAlex.html">
+            <img src="./resources/rinderrouladen-klassisch.jpg" alt="" />
+          </a>
+          <p>Rinderroulade klassisch</p>
         </div>
       </div>
-      <div id="rezepte">
-        <h2>Weitere Rezepte</h2>
-        <div class="rezepte">
-          <div class="rezeptBox">
-            <a href="./rezeptLeon.html">
-              <img src="./resources/haehnchengeschnetzeltes-mit-bandnudeln.jpg" alt="" />
-            </a>
-              <p>Hähnchengeschnetzeltes <br> mit Bandnudeln</p>
-          </div>
-          <div class="rezeptBox">
-            <a href="./rezeptSurab.html">
-              <img src="./resources/img/bowl.png" alt="" />
-            </a>
-            <p>Bibimbap (Gemüsebowl)</p>
-          </div>
-          <div class="rezeptBox">
-            <a href="./rezeptAlex.html">
-              <img src="./resources/rinderrouladen-klassisch.jpg" alt="" />
-            </a>
-            <p>Rinderroulade klassisch</p>
-          </div>
-        </div>
+    </div>
+    <div id="misc">
+      <h2>Pfanne vs. Wok - Was ist besser?</h2>
+      <div id="box">
+        <p>
+          Der Wok überzeugt mit seiner eleganten, gewölbten Form, die sehr schnell hohe Temperaturen von 200-250 °C
+          erreicht. Dank seines Designs eignet er sich perfekt für dynamisches Stir-Fry beim ständigen Schwenken
+          werden Zutaten wie Fleisch, Gemüse oder Tofu in kürzester Zeit scharf angebraten, was intensive
+          Geschmackserlebnisse und den Erhalt von Frische garantiert.<br><br> Die klassische Pfanne hingegen punktet mit einem
+          flachen Boden und einer gleichmäßigen Hitzeverteilung bei moderateren Temperaturen von 140-170 °C. Dies macht
+          sie ideal für sanftes Braten, Schmoren und traditionelle Kochtechniken, bei denen behutsames Garen im
+          Vordergrund steht. Wählen Sie Ihr Küchenwerkzeug und erleben Sie, wie unterschiedlich sich Gerichte zubereiten
+          lassen ob feurig und schnell oder gemütlich und schonend!
+        </p>
+        <img src="./resources/img/wok.jpg" alt="" />
       </div>
-      <div id="misc">
-        <h2>Irgendwas Anderes</h2>
-        <div id="box">
-          <p>
-            Lorem ipsum dolor sit amet, r incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitationent, sunt
-            in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <img src="./resources/img/croissant.jpg" alt="" />
-        </div>
+    </div>
+  </main>
+  <footer>
+    <div id="footerAlignCenter">
+      <div id="footer-content">
+        <img src="./resources/img/logo_small.png" alt="logo" />
+        <nav>
+          <a href="./datenschutz.html">Datenschutz</a>
+          <a href="./impressum.html">Impressum</a>
+        </nav>
       </div>
-    </main>
-    <footer>
-      <div id="footerAlignCenter">
-        <div id="footer-content">
-            <img src="./resources/img/logo_small.png" alt="logo" />
-            <nav>
-              <a href="./datenschutz.html">Datenschutz</a>
-              <a href="./impressum.html">Impressum</a>
-            </nav>
-        </div>
-      </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="./index.js"></script>
-  </body>
+  <script src="./index.js"></script>
+</body>
+
 </html>
