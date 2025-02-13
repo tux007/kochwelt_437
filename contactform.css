@@ -63,6 +63,12 @@ textarea {
   padding-left: 10px;
 }
 
+@media (max-width: 400px) {
+  .inside {
+    width: 250px;
+  }
+}
+
 @media (max-height: 750px) {
   .media {
     margin-bottom: 5px !important;
