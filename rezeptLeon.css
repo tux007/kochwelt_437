@@ -31,11 +31,11 @@ main {
     white-space: nowrap;
 }
 
-.block {
+/* .block {
     display: block;
     max-width: 500px;
     margin: 0;
-}
+} */
 
 .icon {
     width: 20px;
@@ -154,5 +154,11 @@ td:nth-child(2) {
     #input {
         width: 30px;
         font-size: 16px;
+    }
+
+    .block {
+        display: block;
+        max-width: 500px;
+        margin: 0;
     }
 }
