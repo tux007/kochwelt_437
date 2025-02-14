@@ -32,7 +32,7 @@
 #rezepte {
     background-color: lightgrey;
     width: 100%;
-    padding: 60px 0;
+    padding: 60px 80px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -54,9 +54,9 @@
 
 .rezepte {
     max-width: 1440px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 18px;
     font-weight: bold;
 }
