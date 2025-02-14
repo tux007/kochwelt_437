@@ -121,11 +121,13 @@ button {
     display: flex;
     gap: 20px;
     align-items: center;
+    margin: 0;
 }
 
 #footer-content nav a {
     color: white;
     text-decoration: none;
+    padding: 0;
 }
 
 #footer-content nav a:hover {
@@ -137,6 +139,7 @@ button {
 #footerAlignCenter {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     max-width: 1440px;
     margin: 0 80px;
@@ -149,11 +152,6 @@ footer {
     height: 150px;
     background-color: rgb(106, 106, 106);
     color: white;
-}
-
-footer p{
-    font-size: 12px;
-    margin: 0;
 }
 
 @media (max-width: 800px) {

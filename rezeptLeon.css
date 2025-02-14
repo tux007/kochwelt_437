@@ -149,4 +149,10 @@ td:nth-child(2) {
         width: 30px;
         font-size: 16px;
     }
+
+    .block {
+        display: block;
+        max-width: 500px;
+        margin: 0;
+    }
 }
