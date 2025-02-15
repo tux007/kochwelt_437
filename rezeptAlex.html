@@ -6,7 +6,7 @@
     <title>Kochwelt</title>
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./rezeptLeon.css" />
-    <link rel="icon" type="image-icon" href="./resources/img/logo_small.png">
+    <link rel="icon" type="image-icon" href="./resources/img/logo_small.png" />
   </head>
   <body id="test">
     <header>
@@ -21,7 +21,10 @@
           <a href="./impressum.html">Impressum</a>
         </nav>
         <button onclick="toggleMenu()" id="menu">
-          <img src="./resources/img/icons/hamburger-menu-mobile-svgrepo-com.svg" alt="">
+          <img
+            src="./resources/img/icons/hamburger-menu-mobile-svgrepo-com.svg"
+            alt=""
+          />
         </button>
       </div>
       <div id="responsive-nav" class="resp-menu-closed">
@@ -33,19 +36,43 @@
     </header>
     <main>
       <div id="rezept">
-        <h2>Rinderrouladen klassisch</h2>
-        <img src="./resources/rinderrouladen-klassisch.jpg" class="dishImg" alt="Rinderroulade klassisch">
+        <h2>Caesar Salat</h2>
+        <img
+          src="./resources/rinderrouladen-klassisch.jpg"
+          class="dishImg"
+          alt="Caesar Salat"
+        />
 
         <div class="info">
-            <p><img src="./resources/img/icons/clock-regular.svg" class="icon" alt=""> 60 Min.</p>
-            <p><img src="./resources/img/icons/brain-solid.svg" class="icon"alt=""> pfiffig</p>
-            <p><img src="./resources/img/icons/calendar-alt-regular.svg" class="icon" alt="">08.02.2025</p>
+          <p>
+            <img
+              src="./resources/img/icons/clock-regular.svg"
+              class="icon"
+              alt=""
+            />
+            30 Min.
+          </p>
+          <p>
+            <img
+              src="./resources/img/icons/brain-solid.svg"
+              class="icon"
+              alt=""
+            />
+            normal
+          </p>
+          <p>
+            <img
+              src="./resources/img/icons/calendar-alt-regular.svg"
+              class="icon"
+              alt=""
+            />08.02.2025
+          </p>
         </div>
 
         <div class="line"></div>
         <div id="portionen">
           <p>Zutaten für</p>
-          <input id="input" type="number" value="8" min="1" max="20" />
+          <input id="input" type="number" value="4" min="1" max="20" />
           <button onclick="checkInput()">
             <img
               class="icon"
@@ -54,7 +81,6 @@
             />
             Portionen
           </button>
-
         </div>
         <div id="customMessage" style="display: none">
           <div id="messageContent">
@@ -63,131 +89,133 @@
           </div>
         </div>
         <table>
-        <tbody>
+          <tbody>
             <tr>
-                <td><span>8</span></td>
-                <td>Rinderroulade(n)</td>
+              <td><span>1</span></td>
+              <td>Ei(er)</td>
             </tr>
             <tr>
-                <td><span>5</span></td>
-                <td>Zwiebeln</td>
+              <td><span>0.75</span> TL</td>
+              <td>Salz</td>
             </tr>
             <tr>
-                <td><span>4</span></td>
-                <td>Gewürzgurken</td>
+              <td><span>0.25</span> TL</td>
+              <td>Pfeffer, schwarzer, frisch gemahlen</td>
             </tr>
             <tr>
-                <td><span>4</span> EL</td>
-                <td>Senf, mittelscharfer</td>
+              <td><span>2</span> EL</td>
+              <td>Weißweinessig</td>
             </tr>
             <tr>
-                <td><span>12</span> Scheibe(n)</td>
-                <td>Frühstückspeck</td>
+              <td><span>1</span></td>
+              <td>Knoblauchzehe(n), geschält und zerdrückt</td>
             </tr>
             <tr>
-                <td><span>2</span> EL</td>
-                <td>Butterschmalz</td>
+              <td><span>0.5</span> TL</td>
+              <td>Senf</td>
             </tr>
             <tr>
-                <td><span>1</span> Stück(e)</td>
-                <td>Knollensellerie</td>
+              <td><span>1</span> TL</td>
+              <td>Worcestersauce</td>
             </tr>
             <tr>
-                <td><span>1</span></td>
-                <td>Möhre(n)</td>
+              <td><span>2</span></td>
+              <td>Anchovis, feingehackt</td>
             </tr>
             <tr>
-                <td><span>0.5</span> Stange(n)</td>
-                <td>Lauch</td>
+              <td><span>100</span> ml</td>
+              <td>Olivenöl</td>
             </tr>
             <tr>
-                <td><span>0.5</span> Flasche</td>
-                <td>Rotwein, guter, ca. 375ml</td>
+              <td><span>2</span></td>
+              <td>Zitronensaft, frisch gepresst</td>
             </tr>
             <tr>
-                <td></td>
-                <td>Salz und Pfeffer</td>
+              <td><span>2</span></td>
+              <td>
+                Römersalat(e), gewaschen, trockengetupft, in mundgerechte Stücke
+                geschnitten und gekühlt
+              </td>
             </tr>
             <tr>
-                <td><span>0.5</span> Liter</td>
-                <td>Rinderfond, kräftiger</td>
+              <td><span>50</span> g</td>
+              <td>Parmesan, frisch gerieben</td>
             </tr>
             <tr>
-                <td>TL</td>
-                <td>Speisestärke</td>
+              <td><span>1.5</span> EL</td>
+              <td>Olivenöl</td>
             </tr>
             <tr>
-                <td><span>1</span>  Schuss</td>
-                <td>Gurkenflüssigkeit</td>
+              <td><span>1</span> große</td>
+              <td>Knoblauchzehe(n) </td>
             </tr>
-        </tbody>
-    </table>
+            <tr>
+              <td><span>100</span> g</td>
+              <td>Baguette(s), gewürfelt, oder italienisches Weißbrot</td>
+            </tr>
+            <tr>
+              <td><span>100</span> g</td>
+              <td>Parmesan, frisch gerieben</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <div id="zubereitung">
-    <h2>Zubereitung</h2>
-    <div class="info block">
-        <p class="background_recipe_meta"><img src="./resources/img/icons/clock-regular.svg" class="icon" alt=""> Arbeitszeit ca. 1 Stunde</p>
-        <p class="background_recipe_meta"><img src="./resources/img/icons/clock-regular.svg" class="icon" alt=""> Gesamtzeit ca. 3 Stunden</p>
-    </div>
-        <p>
-            Die Rinderrouladen mit Küchenkrepp trockentupfen. Zwiebeln in Halbmonde, Gurken in Längsstreifen schneiden. Schere und Küchengarn bereitstellen. 
-            Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern.
-            <br>
-            <br>
-            Die ausgebreiteten Rouladen dünn mit Senf bestreichen, salzen und pfeffern. Auf jede Roulade mittig in der Länge ca. 1/2 Zwiebel und 1 1/2 Scheiben Frühstücksspeck sowie 1/2 (evtl. mehr) Gurke verteilen. Nun von beiden Längsseiten etwas einschlagen, dann einrollen und mit dem Küchengarn wie ein Postpaket verschnüren. 
-            <br>
-            <br>
-            In einer Pfanne das Butterschmalz heiß werden lassen und die Rouladen rundherum darin anbraten. 
-            Herausnehmen und in einen Schmortopf umfüllen.
-            <br>
-            <br>
-            Den Sellerie, die restliche Zwiebel, Lauch und Möhren kleinschneiden und in der Pfanne anbraten. 
-            Sobald sie halbwegs "blond" sind, kurz rühren. 
-            <br>
-            <br>
-            Eine sehr dünne Schicht vom Rotwein angießen, nicht mehr rühren und die Flüssigkeit verdampfen lassen. 
-            <br>
-            <br>
-            Sobald das Gemüse dann wieder trockenbrät, wieder eine Schicht Wein angießen, kurz rühren und weiter verdampfen lassen. 
-            <br>
-            <br>
-            Dies wiederholen, bis die 1/2 Flasche Wein aufgebraucht ist. Auf diese Art wird das Röstgemüse sehr braun (gut für den Geschmack und die Farbe der Soße), aber nicht trocken. 
-            <br>
-            <br>
-            Am Schluss mit dem Rinderfond, etwas Salz und Pfeffer und einem guten Schuss Gurkensud auffüllen und dann in den Schmortopf zu den Rouladen geben. Den Deckel auflegen.
-            <br>
-            <br>
-            Den Topf entweder auf kleine Flamme stellen oder bei ca. 160 °C Ober-/Unterhitze in den Backofen für 1 1/2 Stunden geben. Ab und zu evtl. etwas Flüssigkeit zugießen.
-            <br>
-            <br>
-            Nach 1 1/2 Stunden testen, ob die Rouladen weich sind (einfach mal mit den Kochlöffel ein bisschen draufdrücken, sie sollten sich willig eindrücken lassen - wenn nicht, noch eine halbe Stunde weiterschmoren). 
-            <br>
-            <br>
-            Dann vorsichtig aus dem Topf heben und warm stellen.
-            <br>
-            <br>
-            Die Soße durch ein Sieb geben und wieder aufkochen lassen. Ca. 1 EL Senf mit etwas Wasser und der Speisestärke gut verrühren, in die kochende Soße nach und nach unter Rühren gießen, bis die gewünschte Konsistenz erreicht ist. Die Soße nochmal mit Salz, Pfeffer, Rotwein und Gurkensud abschmecken.
-        </p>
-    </div>
+        <div id="zubereitung">
+          <h2>Zubereitung</h2>
+          <div class="info block">
+            <p class="background_recipe_meta">
+              <img
+                src="./resources/img/icons/clock-regular.svg"
+                class="icon"
+                alt=""
+              />
+              Arbeitszeit ca. 30 Minuten
+            </p>
+            <p class="background_recipe_meta">
+              <img
+                src="./resources/img/icons/clock-regular.svg"
+                class="icon"
+                alt=""
+              />
+              Gesamtzeit ca. 50 Minuten
+            </p>
+          </div>
+          <p>
+            Das Ei etwa 2 Minuten in siedendem Wasser kochen und abkühlen.
+            <br />
+            <br />
+            Für das Dressing:
+            In einer großen Schüssel Salz mit Pfeffer, Essig, Knoblauch, Senf, Worcestersauce und den gehackten Anchovis mischen. 
+            Das Ei schälen, in eine Schüssel geben, mit dem Zitronensaft beträufeln und mit einem Stabmixer schaumig aufschlagen. 
+            Die Eicreme in die Schüssel zu den Gewürzen geben, weiter schlagen und Olivenöl nach und nach zugeben.
+            <br />
+            <br />
+            Für die Parmesan-Croutons:
+            Die 1,5 EL Öl und den Knoblauch in einer Bratpfanne erhitzen, bis der Knoblauch goldbraun ist. 
+            Den Knoblauch entfernen. Die Brotwürfel in die Pfanne geben, bei kleiner Hitze ca. 15 Minuten unter Rühren leicht bräunen und in Parmesan wälzen.
+            Den Salat, den Parmesan und die Croutons zum Dressing geben und vorsichtig mischen. 
+            Mit den Anchovisstreifen und etwas grob geraspeltem Parmesan garnieren und sofort servieren.
+          </p>
+        </div>
         <div class="line"></div>
         <div id="ersteller">
-            <h3>Rezept erstellt von</h3>
-            <div>
-              <img src="./resources/img//img_creator_AlexSchöfer.JPG" alt="" />
-              <p>Alex Schöfer</p>
-            </div>
+          <h3>Rezept erstellt von</h3>
+          <div>
+            <img src="./resources/img//img_creator_AlexSchöfer.JPG" alt="" />
+            <p>Alex Schöfer</p>
           </div>
+        </div>
       </div>
     </main>
 
     <footer>
       <div id="footerAlignCenter">
         <div id="footer-content">
-            <img src="./resources/img/logo_small.png" alt="logo" />
-            <nav>
-              <a href="./datenschutz.html">Datenschutz</a>
-              <a href="./impressum.html">Impressum</a>
-            </nav>
+          <img src="./resources/img/logo_small.png" alt="logo" />
+          <nav>
+            <a href="./datenschutz.html">Datenschutz</a>
+            <a href="./impressum.html">Impressum</a>
+          </nav>
         </div>
       </div>
     </footer>
