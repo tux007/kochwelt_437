@@ -1,7 +1,7 @@
 main {
     display: flex;
     justify-content: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 300px);
     flex: 1; 
 }
 
@@ -113,11 +113,12 @@ td:nth-child(2) {
     align-items: center;
     margin: 20px 0;
     width: auto;
+    height: auto;
 }
 
 #messageContent {
     background: rgb(140, 93, 93, 0.5);
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     width: auto;
