@@ -13,19 +13,24 @@ for (let i = 0; i < amounts.length; i++) {
 }
 
 function checkInput() {
-    if (input.value >= 1 && input.value <= 20) {
-        calculate();
-    } else {
+    const input = document.getElementById('input').value;
+    if (input < 1 || input > 20) {
         showMessage();
+    } else {
+        calculate();
     }
 }
 
 function showMessage() {
-    document.getElementById("customMessage").style.display = "flex";
+    const customMessage = document.getElementById('customMessage');
+    customMessage.style.display = 'flex';
+    setTimeout(() => {
+        customMessage.style.display = 'none';
+    }, 2000);
 }
 
 function closeMessage() {
-    document.getElementById("customMessage").style.display = "none";
+    document.getElementById('customMessage').style.display = "none";
 }
 
 function calculate() {

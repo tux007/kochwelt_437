@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  min-height: calc(100vh - 300px);
   margin: 0;
   width: 100%;
   padding-top: 20px;
