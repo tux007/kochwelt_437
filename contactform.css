@@ -61,6 +61,7 @@ textarea {
   border-radius: 4px;
   width: 94%;
   padding-left: 10px;
+  resize: vertical;
 }
 
 @media (max-width: 400px) {

@@ -5,9 +5,10 @@
   src: url(./resources/fonts/Raleway-VariableFont_wght.ttf);
 }
 
-html, body {
-    position: relative;
-    overflow-x: hidden;
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
 }
 
 body {
@@ -61,40 +62,39 @@ nav a:hover {
 }
 
 #menu {
-    background-color: white;
-    box-shadow: none;
-    display: none;
+  background-color: white;
+  box-shadow: none;
+  display: none;
 }
 
 #rezeptDesTages img {
   cursor: pointer;
 }
 
-
 #menu img {
-    width: 30px;
+  width: 30px;
 }
 
 #responsive-nav {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 150px;
-    right: 0px;
-    background-color: rgb(40, 73, 40);
-    padding: 20px;
-    transition: 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  background-color: rgb(40, 73, 40);
+  padding: 20px;
+  transition: 0.2s ease-in-out;
 }
 
-#responsive-nav a{
-    color: white;
-    text-decoration: none;
-    box-shadow: none;
-    padding: 10px;
+#responsive-nav a {
+  color: white;
+  text-decoration: none;
+  box-shadow: none;
+  padding: 10px;
 }
 
 .resp-menu-closed {
-    transform: translateX(100%);
+  transform: translateX(100%);
 }
 
 button {
@@ -109,76 +109,82 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: rgba(0, 128, 0, 255);
+  border-radius: 5px;
+  scale: 1.1;
+}
+
 #footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 130px;
 }
 
 #footer-content img {
-    height: 50px;
-    filter: invert(1) grayscale(100%);
-    margin: 20px;
+  height: 50px;
+  filter: invert(1) grayscale(100%);
+  margin: 20px;
 }
 
 #footer-content nav {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
 }
 
 #footer-content nav a {
-    color: white;
-    text-decoration: none;
-    padding: 0;
+  color: white;
+  text-decoration: none;
+  padding: 0;
 }
 
 #footer-content nav a:hover {
-    text-decoration: underline;
-    color: white;
-    box-shadow: none;
+  text-decoration: underline;
+  color: white;
+  box-shadow: none;
 }
 
 #footerAlignCenter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    max-width: 1440px;
-    margin: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 80px;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 150px;
-    background-color: rgb(106, 106, 106);
-    color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(106, 106, 106);
+  color: white;
 }
 
 @media (max-width: 800px) {
-    nav {
-        display: none;
-    }
+  nav {
+    display: none;
+  }
 
-    #menu {
-        display: block;
-    }
+  #menu {
+    display: block;
+  }
 }
 
 @media (max-width: 470px) {
-    header img {
-        height: 60px;
-    }
+  header img {
+    height: 60px;
+  }
 
-    #footer-content {
-        flex-direction: column;
-    }
+  #footer-content {
+    flex-direction: column;
+  }
 
-    footer p {
-        display: none;
-    }
+  footer p {
+    display: none;
+  }
 }
