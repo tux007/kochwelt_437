@@ -7,10 +7,16 @@ let originalValue = input.value;
 
 const normalizedAmounts = [];
 
-for (let i = 0; i < amounts.length; i++) {
-    let normalizedAmount = amounts[i].textContent / originalValue;
-    normalizedAmounts.push(normalizedAmount);
+function normalizeAmounts() {
+    for (let i = 0; i < amounts.length; i++) {
+        let normalizedAmount = amounts[i].textContent / originalValue;
+        normalizedAmounts.push(normalizedAmount);
+    }
 }
+
+window.onload = function() {
+    normalizeAmounts();
+};
 
 function checkInput() {
     const input = document.getElementById('input').value;
