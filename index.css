@@ -28,7 +28,7 @@ header #content {
   width: 1440px;
   margin: 0 140px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -109,7 +109,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.recipe-btn:hover {
   background-color: rgba(0, 128, 0, 255);
   border-radius: 5px;
   scale: 1.1;
@@ -166,6 +166,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+  header #content {
+    gap: calc(100vw - 500px)
+  }
+
   nav {
     display: none;
   }
@@ -175,7 +179,17 @@ footer {
   }
 }
 
+@media (max-width: 600px) {
+  header #content {
+    gap: calc(100vw - 400px)
+  }
+}
+
 @media (max-width: 470px) {
+  header #content {
+    gap: calc(100vw - 275px)
+  }
+
   header img {
     height: 60px;
   }
